@@ -9,7 +9,7 @@
       "cors": "^2.8.5",
       "express": "^4.19.2",
       "express-rate-limit": "^7.0.0",
-      "p-queue": "^9.1.0",
+      "p-queue": "^8.0.1",
       "uuid": "^9.0.1",
       "youtube-dl-exec": "^2.4.1"
     },

@@ -8,10 +8,13 @@ import cors from 'cors';
 import rateLimit from 'express-rate-limit';
 import PQueue from 'p-queue';
 import { v4 as uuidv4 } from 'uuid';
-import { raw as ytdl } from 'youtube-dl-exec';
+// import { raw as ytdl } from 'youtube-dl-exec';
 import EventEmitter from 'events';
 import path from 'path';
 import { fileURLToPath } from 'url';
+
+import youtubedl from 'youtube-dl-exec';
+const { raw: ytdl } = youtubedl;   // ambil properti "raw"
 
 const app = express();
 const PORT = process.env.PORT || 8080;
