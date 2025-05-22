@@ -1,0 +1,10 @@
+video-downloader/
+├── README.md
+├── package.json
+├── .gitignore
+├── server.js            # API (Express)
+├── render.yaml          # (opsional) auto-deploy ke Render
+└── public/              # Front-end statis → GitHub Pages
+    ├── index.html
+    ├── style.css
+    └── app.js

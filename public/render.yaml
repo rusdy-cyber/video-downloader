@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: video-downloader-api
+    runtime: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    envVars:
+      - fromGroup: yt-dlp-vars
