@@ -96,7 +96,7 @@ function doDownload({ url, fmt, audio, res, emitter, id }) {
       args.push('-f', fmt.includes('+') ? fmt : `${fmt}+bestaudio/best`);
     }
 
-    const proc = spawn('youtube-dl', args); // Gunakan CLI langsung
+    const proc = spawn('yt-dlp', args); // Gunakan CLI langsung
 
     let filename = audio === '1' ? 'audio.mp3' : 'video.mp4';
 
